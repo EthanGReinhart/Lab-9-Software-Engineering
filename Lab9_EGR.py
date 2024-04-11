@@ -19,6 +19,11 @@ def main():
             for char in password:
                 encoded += str(int(char) + 3)
             print("Your password has been encoded and stored")
+        if choice == "2":
+            decode = ""
+            for char in encoded:
+                decode += str(int(char) - 3)
+            print(f"the encoded password is {encoded}, the original password is {decode}")
         elif choice == "3":
             break
 
